@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>课表</title>
+</head>
+<body>   <!--定义文档的主体-->
+<h4 style="text-align:center">课程表</h4>    <!-- h1 到 h4 是定义HTML标题，style 规定元素的行内样式，text-align：center 就是把HTML元素中的文本排列到中间的意思。 -->
+<table border="1" cellpadding="20" width="100%">         <!-- table 定义表格，border定义边框，cell padding格子在原来的基础上放大，但内容大小不变；width随浏览器分辨率改变页面大小-->
+    <tr>
+	    <th colspan="2">时间\日期</th>  <!-- column span（跨列的缩写）单元格横向跨越的列数 -->
+	    <th>一</th>
+	    <th>二</th>
+	    <th>三</th>
+	    <th>四</th>
+	    <th>五</th>
+    </tr>
+
+    <tr>
+	    <th rowspan="3">上午</th>     <!-- 单元格纵向跨越的行数 -->
+	    <th>8:35-9:20</th>
+	    <th>政治</th>
+	    <th>英语</th>
+	    <th>地理</th>
+	    <th>生物</th>
+	    <th>语文</th>
+    </tr>
+
+	<tr>
+	    <th>9:30-10:15</th>
+	    <th>数学</th>
+	    <th>英语</th>
+	    <th>音乐</th>
+	    <th>体育</th>
+	    <th>语文</th>
+    </tr>
+
+    <tr>
+	    <th>10:25-11:10</th>
+	    <th>语文</th>
+	    <th>数学</th>
+	    <th>英语</th>
+	    <th>音乐</th>
+	    <th>体育</th>
+    </tr>
+
+    <tr>
+    <th colspan="7"></th>
+    </tr>
+
+    <tr>
+	    <th rowspan="3">下午</th>
+	    <th>14:30-15:15</th>
+	    <th>英语</th>
+	    <th>音乐</th>
+	    <th>体育</th>
+	    <th>语文</th>
+	    <th>数学</th>
+    </tr>
+
+    <tr>
+	    <th>15:25-16:10</th>
+	    <th>语文</th>
+	    <th>英语</th>
+	    <th>音乐</th>
+	    <th>体育</th>
+	    <th>语文</th>
+    </tr>
+
+	<tr>
+	    <th>16:20-17:05</th>
+	    <th>跑操</th>
+	    <th>跑操</th>
+	    <th>跑操</th>
+	    <th>大扫除</th>
+	    <th>兴趣课</th>
+    </tr>
+ </table>
+</body>
+</html>

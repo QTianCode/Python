@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>自定义列表</title>
+</head>
+<body>
+<h4>请填写用户信息</h4>
+<form action="" method="post" >
+<!--form是表单
+    里面的内容是要提交出去的。
+
+    action 是链接
+    点击浏览选择提交位置，可以把数据提交到另一个页面，还可以提交到后台。
+
+    method 是方法
+    method是方法，有get和post两种，各有所长。就是内容填好后提交需要一个方法，是获取你的内容还是传递你的内容。
+    get:明文提交，快速，但不安全，不能提交大数据
+    post:密文，安全，可以提交大数据
+-->
+    <div>
+        <label for="username">用户名:</label>               <!--<label> 标签为 input 元素定义标注（标记）。
+
+label 元素不会向用户呈现任何特殊效果。不过，它为鼠标用户改进了可用性。如果您在 label 元素内点击文本，就会触发此控件。就是说，当用户选择该标签时，浏览器就会自动将焦点转到和标签相关的表单控件上。
+
+<label> 标签的 for 属性应当与相关元素的 id 属性相同。-->
+        <input type="text" name="username" id="username">
+    </div>
+    <div>
+        <label for="password">密&nbsp;&nbsp;&nbsp;码:</label>
+        <input type="password" name="password" id="password">
+    </div>
+    <div>
+        <label >性&nbsp;&nbsp;&nbsp;别:</label>
+        <input type="radio" name="gender"  value="male" style="display: inline">男
+        <input type="radio" name="gender"  value="female" style="display: inline">女   <!-- style="display: inline"让块状元素在同一行显示 -->
+    </div>
+    <div>
+        <label for="hobby">爱&nbsp;&nbsp;&nbsp;好:</label>
+        <select name="hobby" id="hobby">
+            <option value="篮球">篮球</option>
+            <option value="足球">足球</option>
+            <option value="乒乓球">乒乓球</option>
+        </select>
+    </div>
+    <div>
+        <label>上传头像:</label>
+        <input type="file" name="avatar">
+    </div>
+    <div>
+        <label for="intro">自我介绍:</label>
+        <div>
+            <textarea name="intro" id="intro" cols="20" rows= "4" id="remark"> </textarea>
+        </div>
+    </div>
+    <div>
+        <input type="submit" name="Submit" value= "提交">
+        <input type="reset" name="Submit" value= "重置">
+    </div>
+</form>
+
+</body>
+</html>
